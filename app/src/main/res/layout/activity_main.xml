@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/feedBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/feedContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="always">
+
+            <FrameLayout
+                android:id="@+id/feedThumbContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor">
+
+                <ImageView
+                    android:id="@+id/feedThumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rss" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/feedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/primaryColor"
+                android:padding="16dp"
+                android:text="New Text"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:minHeight="700dp"
+                android:padding="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante felis, fringilla in semper nec, molestie id ligula. Ut id ullamcorper turpis. In blandit fermentum nibh in accumsan. Quisque accumsan turpis tortor, non vulputate mauris mattis nec. Fusce feugiat tellus ligula, ut bibendum nulla porta vel. Nullam eleifend ex ut odio elementum varius nec et tortor. Ut id sodales nisl. Maecenas dignissim lacus nec risus bibendum, at suscipit sapien pharetra. Suspendisse porttitor tortor a justo placerat suscipit.
+
+Nullam sit amet purus lacus. Nam luctus nulla sit amet tellus commodo ultrices. Aenean rhoncus aliquam nisl, et imperdiet ipsum lobortis laoreet. In imperdiet lacinia urna. Aliquam erat volutpat. Mauris maximus euismod ante, et varius dolor luctus eu. Praesent et ex ornare, hendrerit augue a, dignissim urna. Integer tincidunt lacus a rhoncus scelerisque. Nunc a felis sem. Suspendisse ac congue erat, id dictum lacus. Mauris eu imperdiet sem. Mauris quis varius orci. Maecenas vitae mollis dui, eu ultrices nisi. Curabitur id tellus convallis sem varius malesuada. Duis rhoncus ipsum quis neque sodales ultrices. Aliquam ullamcorper lobortis elit, sit amet facilisis mi maximus in.
+
+Suspendisse laoreet purus est, id ornare dui rutrum vitae. Aenean laoreet consequat pulvinar. Proin pulvinar ultricies mi, ut mattis tortor imperdiet eget. Vivamus egestas mattis elementum. Vestibulum volutpat nunc euismod, scelerisque tellus ac, congue eros. Aenean dolor ipsum, pharetra et tempor non, molestie ac odio. Fusce hendrerit tincidunt ligula. Duis nec faucibus diam. Sed lectus enim, lacinia vulputate lorem sit amet, rhoncus molestie felis. Etiam vehicula lobortis sollicitudin.
+
+Curabitur efficitur nisl sed nisi ultricies, at viverra tellus sagittis. Aliquam vel condimentum turpis. Nam vulputate laoreet mauris, vitae blandit nisi fermentum ut. Donec vestibulum elit volutpat massa pulvinar, quis aliquet ex tempus. Ut mauris purus, dignissim eu dictum sed, commodo in orci. Donec lorem nisl, tempor ac aliquam non, fringilla sit amet enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan luctus magna. Vivamus nisi odio, gravida sed molestie sed, ornare vitae elit. Morbi eu arcu vitae mauris pellentesque tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis massa nec nunc varius iaculis et vitae ligula. Phasellus laoreet, dui quis vulputate placerat, mi lorem porta urna, vel tempus tellus lorem et ipsum. Pellentesque sapien mi, egestas at cursus id, vestibulum id tellus.
+
+Nam et orci posuere, ultrices metus id, tristique erat. Ut lacinia nisl quis nulla hendrerit, sit amet posuere lorem pellentesque. Proin tristique nisl mi, ac imperdiet massa elementum eget. Donec id risus sit amet neque suscipit semper id in metus. Maecenas nec volutpat lacus. Nunc ullamcorper dui quis ornare congue. Praesent vel porta lorem, in aliquet lectus. Mauris iaculis gravida ex, et faucibus ligula sodales eu. Vestibulum non lorem vehicula libero volutpat dapibus quis nec nibh. Nullam odio nisl, facilisis sit amet ipsum eu, lobortis placerat nulla. Donec sit amet molestie diam. Nam ut ipsum tortor. Curabitur eu sem feugiat, accumsan nisi nec, porttitor nisl."
+                android:textColor="#77000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+</RelativeLayout>
